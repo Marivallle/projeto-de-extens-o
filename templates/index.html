@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tela de Consulta</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <div class="container">
+        <h1>Consulta de Instituições</h1>
+        <form id="consultaForm">
+            <label for="estado">Digite o nome do estado:</label>
+            <input type="text" id="estado" name="estado" placeholder="Ex: Acre, Rio de Janeiro">
+            <button type="submit">Consultar</button>
+        </form>
+        <div id="resultado">
+            <h2>Resultados:</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Nome</th>
+                        <th>Estado</th>
+                        <th>Contato</th>
+                        <th>Modalidade de Internação</th>
+                        <th>Endereço</th>
+                        <!-- Adicione mais colunas conforme necessário -->
+                    </tr>
+                </thead>
+                <tbody id="resultadosTabela">
+                    <!-- Resultados serão inseridos aqui -->
+                </tbody>
+            </table>
+        </div>
+    </div>
+    <script src="{{ url_for('static', filename='script.js') }}"></script>
+</body>
+</html>
