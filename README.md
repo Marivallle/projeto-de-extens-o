@@ -1,4 +1,3 @@
-TESTE
+Projeto de extensão da faculdade Estácio de Sá
 
-teste 2
-teste
+Para iniciar a aplicação execute o comando pip install -r requirements.txt
